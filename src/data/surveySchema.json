@@ -1,0 +1,110 @@
+{
+  "questions": [
+    {
+      "id": "preferred_season",
+      "label": "Which MU season do you prefer?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Season 1–3 (Classic)",
+        "Season 4–6 (Balanced)",
+        "Season 7+ (Modern)"
+      ]
+    },
+    {
+      "id": "leveling_rate",
+      "label": "Preferred leveling rate?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Low (hard grind)",
+        "Medium (balanced)",
+        "High (fast progression)"
+      ]
+    },
+    {
+      "id": "reset_system",
+      "label": "Preferred stats/reset system?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Fixed stats per reset",
+        "Custom stat allocation",
+        "No reset system"
+      ]
+    },
+    {
+      "id": "visual_style",
+      "label": "Visual style preference?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Classic MU look",
+        "Modernized graphics",
+        "Mix of both"
+      ]
+    },
+    {
+      "id": "progression_feel",
+      "label": "How should progression feel over time?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Slow but rewarding (long-term grind)",
+        "Balanced progression",
+        "Fast early, slower endgame"
+      ]
+    },
+    {
+      "id": "item_drops",
+      "label": "How should item drops feel?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Rare and rewarding",
+        "Balanced",
+        "Frequent and easy"
+      ]
+    },
+    {
+      "id": "upgrade_system",
+      "label": "Upgrade system preference (+9, +13, etc.)?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Risky RNG (can fail/downgrade)",
+        "RNG with protection",
+        "Guaranteed upgrade (no RNG)"
+      ]
+    },
+    {
+      "id": "afk_systems",
+      "label": "How do you feel about auto/AFK systems?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Fully allowed",
+        "Limited only",
+        "Not allowed"
+      ]
+    },
+    {
+      "id": "pvp_pve_preference",
+      "label": "What matters more to you?",
+      "type": "select",
+      "required": true,
+      "options": [
+        "PvP (PK, guild wars)",
+        "PvE (grind, bosses)",
+        "Both equally"
+      ]
+    },
+    {
+      "id": "open_feedback",
+      "label": "What features or changes would make you play and stay in a MU server?",
+      "type": "text",
+      "required": false,
+      "placeholder": "Share your thoughts..."
+    }
+  ]
+}

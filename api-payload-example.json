@@ -1,0 +1,63 @@
+{
+  "submitted_at": "2026-05-03T14:30:00.000Z",
+
+  "age_range": "25-34",
+  "play_region": "South America",
+  "weekly_play_hours": "15-30h",
+  "current_main_game": "Lost Ark",
+
+  "mu_experience_level": "Regular player",
+  "server_type_played": "Private — mid rate, Private — high rate",
+  "main_class_played": "Dark Knight / Blade Knight, Magic Gladiator",
+
+  "preferred_season": "Season 1-3 (Classic / OG)",
+  "server_start_preference": "Fresh start every few months (seasonal resets)",
+  "season_preference_reason": "Classic balance is tighter. Modern seasons add bloat that dilutes the core loop.",
+
+  "primary_goal": "Reach top PvP ranking",
+  "session_style": "Daily focused sessions (1-3h)",
+  "solo_vs_party": "Mix of solo and party",
+  "content_priority": "PvP and dueling, Guild wars / Castle Siege, Min-maxing builds and stats",
+
+  "reset_system_preference": "Soft resets (keep some bonuses, reset level)",
+  "progression_pace": "Balanced — 1-2 weeks to a strong character",
+  "rng_upgrade_tolerance": "Some RNG is fine if odds are clearly shown",
+  "safe_upgrade_ceiling": "+13",
+  "drop_rate_preference": "Low (1 in 100-500) — rare but achievable",
+  "afk_farming_stance": "Nice to have but should be limited",
+  "auto_hunt_opinion": "Fine if capped per day (e.g. 4h limit)",
+
+  "trading_importance": "Important, I trade regularly",
+  "economy_model": "Mixed (NPC floor prices + free player trading)",
+  "currency_preference": "Mixed: Zen + item trading",
+  "market_feature": "All of the above — give me options",
+
+  "pvp_pve_preference": "Heavy PvP — I live for player combat",
+  "pk_system_preference": "Karma / penalty system (turn red for killing)",
+  "castle_siege_interest": "Very interested — it's the best endgame content",
+  "guild_wars_frequency": "Weekly",
+
+  "blessing_concept_reaction": "Sounds interesting, want to know more",
+  "blessing_type_preference": "XP / leveling boost, Drop rate increase, Upgrade success rate boost",
+  "blessing_duration": "Short bursts (1-4 hours) — use when active",
+  "blessing_acquisition": "Mix: earnable + cosmetic tiers purchasable",
+  "blessing_stacking": "Limited stacking (2-3 max at once)",
+  "blessing_balance_concern": "Somewhat concerned — depends on implementation",
+  "blessing_open_feedback": "As long as PvP blessings can't be bought with real money, I'm in. The moment money = damage, I'm out.",
+
+  "spending_willingness": "I spend occasionally when something is worth it",
+  "monthly_spend_range": "$10-$25",
+  "acceptable_purchases": "Cosmetic skins and visual effects, Quality-of-life (extra storage, stash tabs)",
+  "p2w_tolerance": "Zero — cosmetic only, no exceptions",
+  "payment_model": "Free with cosmetic-only shop",
+
+  "past_quit_reasons": "Game became too P2W, Server population died",
+  "retention_drivers": "Regular content patches and updates, Competitive leaderboards and rankings, Fresh start / wipe seasons",
+  "ideal_server_lifespan": "6-12 months",
+  "notification_preference": "World boss spawns, New content patches, Wipe / season reset announcements",
+
+  "biggest_mu_pain_point": "Server admins who abuse item drops and ruin the economy. No transparency, no trust.",
+  "dream_feature": "Transparent upgrade odds shown in the UI, like a live probability meter. Stop hiding the math.",
+  "referral_likelihood": "9 — Very likely",
+  "beta_interest": "Yes — sign me up immediately"
+}
