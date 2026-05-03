@@ -36,6 +36,15 @@ export default function SurveyForm({ onComplete }) {
       return
     }
 
+    const emailQ = schema.questions.find((q) => q.type === 'email')
+    if (emailQ) {
+      const val = answers[emailQ.id] || ''
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+        setError('Please enter a valid email address.')
+        return
+      }
+    }
+
     setSubmitting(true)
     setError(null)
 
@@ -57,8 +66,14 @@ export default function SurveyForm({ onComplete }) {
   return (
     <div className="survey-shell">
       <header className="survey-header">
-        <h1>MU Blessingz</h1>
+        <span className="header-emblem">⚜</span>
+        <h1>MU Online Concept</h1>
         <p>Help us build the server you actually want to play.</p>
+        <div className="ornament-divider">
+          <span className="ornament-line" />
+          <span className="ornament-gem">✦</span>
+          <span className="ornament-line" />
+        </div>
       </header>
 
       <form className="survey-form" onSubmit={handleSubmit} noValidate>

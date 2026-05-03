@@ -1,5 +1,5 @@
 export default function QuestionField({ question, value, onChange }) {
-  const { id, label, type, options, required, placeholder } = question
+  const { id, label, type, options, required, placeholder, hint } = question
 
   function handleCheckbox(option) {
     const current = Array.isArray(value) ? value : []
@@ -15,6 +15,7 @@ export default function QuestionField({ question, value, onChange }) {
         {label}
         {required && <span className="required-star">*</span>}
       </label>
+      {hint && <p className="question-hint">{hint}</p>}
 
       {type === 'select' && (
         <select
@@ -50,6 +51,18 @@ export default function QuestionField({ question, value, onChange }) {
             )
           })}
         </div>
+      )}
+
+      {type === 'email' && (
+        <input
+          id={id}
+          type="email"
+          className="field-input"
+          value={value || ''}
+          onChange={(e) => onChange(id, e.target.value)}
+          placeholder={placeholder || ''}
+          autoComplete="email"
+        />
       )}
 
       {type === 'text' && (

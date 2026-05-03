@@ -25,7 +25,10 @@
 }
 
 body {
-  background: var(--bg-base);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/bg.png') center center / cover no-repeat fixed;
+  background-color: #06060e;
   color: var(--text-primary);
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 15px;
@@ -46,15 +49,22 @@ body {
 .survey-header {
   width: 100%;
   max-width: 640px;
-  padding: 40px 0 28px;
+  padding: 40px 0 0;
   text-align: center;
-  border-bottom: 1px solid var(--border);
   margin-bottom: 36px;
+}
+
+.header-emblem {
+  font-size: 28px;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.65));
 }
 
 .survey-header h1 {
   font-family: 'Cinzel', serif;
-  font-size: clamp(22px, 4vw, 34px);
+  font-size: clamp(26px, 5vw, 42px);
   font-weight: 700;
   letter-spacing: 0.04em;
   background: linear-gradient(135deg, #e8c04a 0%, #c9a227 50%, #a07818 100%);
@@ -62,11 +72,33 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 8px;
+  text-shadow: none;
+  filter: drop-shadow(0 0 24px rgba(201, 162, 39, 0.3));
 }
 
 .survey-header p {
   color: var(--text-secondary);
   font-size: 14px;
+}
+
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 28px;
+}
+
+.ornament-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.45), transparent);
+}
+
+.ornament-gem {
+  color: var(--gold);
+  font-size: 10px;
+  opacity: 0.75;
 }
 
 /* ── Single-page form ─────────────────────── */
@@ -82,10 +114,13 @@ body {
 /* ── Question ─────────────────────────────── */
 
 .question-block {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(14, 13, 28, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(201, 162, 39, 0.18);
   border-radius: var(--radius-lg);
   padding: 24px 28px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(201, 162, 39, 0.07);
 }
 
 .question-label {
@@ -102,13 +137,20 @@ body {
   margin-left: 3px;
 }
 
+.question-hint {
+  margin: 4px 0 8px;
+  font-size: 0.8rem;
+  color: #aaa;
+  font-style: italic;
+}
+
 /* ── Select ───────────────────────────────── */
 
 .field-select {
   width: 100%;
   padding: 10px 14px;
-  background: var(--bg-input);
-  border: 1px solid var(--border);
+  background: rgba(10, 10, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.15);
   border-radius: var(--radius);
   color: var(--text-primary);
   font-size: 14px;
@@ -124,7 +166,8 @@ body {
 
 .field-select:focus {
   outline: none;
-  border-color: var(--border-focus);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.12);
 }
 
 .field-select option {
@@ -132,13 +175,37 @@ body {
   color: var(--text-primary);
 }
 
+/* ── Email input ──────────────────────────── */
+
+.field-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(10, 10, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color var(--transition);
+}
+
+.field-input::placeholder {
+  color: var(--text-muted);
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.12);
+}
+
 /* ── Text input ───────────────────────────── */
 
 .field-text {
   width: 100%;
   padding: 10px 14px;
-  background: var(--bg-input);
-  border: 1px solid var(--border);
+  background: rgba(10, 10, 24, 0.6);
+  border: 1px solid rgba(201, 162, 39, 0.15);
   border-radius: var(--radius);
   color: var(--text-primary);
   font-size: 14px;
@@ -154,7 +221,8 @@ body {
 
 .field-text:focus {
   outline: none;
-  border-color: var(--border-focus);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.12);
 }
 
 /* ── Multi-select checkboxes ──────────────── */
@@ -170,8 +238,8 @@ body {
   align-items: flex-start;
   gap: 10px;
   padding: 10px 12px;
-  background: var(--bg-input);
-  border: 1px solid var(--border);
+  background: rgba(10, 10, 24, 0.55);
+  border: 1px solid rgba(201, 162, 39, 0.15);
   border-radius: var(--radius);
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition);
@@ -293,16 +361,21 @@ body {
 .thankyou-card {
   max-width: 520px;
   width: 100%;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: rgba(14, 13, 28, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(201, 162, 39, 0.18);
   border-radius: var(--radius-lg);
   padding: 56px 48px;
   text-align: center;
+  box-shadow: 0 4px 48px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(201, 162, 39, 0.07);
 }
 
 .thankyou-icon {
   font-size: 48px;
   margin-bottom: 20px;
+  color: var(--gold);
+  filter: drop-shadow(0 0 12px rgba(201, 162, 39, 0.6));
 }
 
 .thankyou-card h2 {
